@@ -71,7 +71,10 @@
           order: -1;
 }
 .news__item:nth-child(3) .news__triangle, .news__item:nth-child(4) .news__triangle {
-  border-left-color: yellow;
+  border-left-color: transparent;
+  border-right-color: #FFF;
+  left: auto;
+  right: 0;
 }
 .news__date {
   -webkit-box-pack: center;

@@ -84,7 +84,10 @@
             }
 
             .news__triangle {
-                border-left-color: yellow;
+                border-left-color: transparent;
+                border-right-color: #FFF;
+                left: auto;
+                right: 0;
             }
         }
     }
