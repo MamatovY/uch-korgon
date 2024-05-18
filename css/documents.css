@@ -1,0 +1,27 @@
+.documents__grid {
+  display: grid;
+  grid-template-columns: 1fr 5fr 3fr 3fr 3fr;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: 5px;
+  border-bottom: 1px solid rgba(182, 184, 188, 0.5);
+  color: #959595;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-size: calc(9px + 9 * (100vw - 425px) / 1075);
+  padding-top: calc(5px + 5 * (100vw - 425px) / 1075);
+  padding-bottom: calc(5px + 5 * (100vw - 425px) / 1075);
+}
+.documents__grid.first {
+  color: #000;
+  font-weight: 700;
+}
+.documents__grid .name {
+  color: #112B60;
+  font-size: calc(8px + 8 * (100vw - 425px) / 1075);
+}/*# sourceMappingURL=documents.css.map */

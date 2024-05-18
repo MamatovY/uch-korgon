@@ -1,0 +1,94 @@
+@import './mixin.scss';
+
+.news {
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 4fr 5fr;
+        gap: 10px;
+    }
+
+    &__img {
+        img {
+            height: 150px;
+            object-fit: cover;
+        }
+    }
+
+    &__date {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__main {
+        h3 a {
+            color: $color1;
+        }
+    }
+
+    &__tags {
+        margin: 10px 0;
+        color: $color2;
+    }
+}
+
+@media (max-width:1024px) {
+    .news {
+        &__items {
+            gap: 30px 15px;
+        }
+
+        &__img img {
+            height: 130px;
+        }
+    }
+}
+
+@media (max-width:834px) {
+    .news {
+
+        &__items {
+            gap: 20px;
+        }
+
+        &__content {
+            display: block;
+        }
+
+        &__img img {
+            @include adaptive-value('height', 210, 130, 1);
+        }
+
+        &__date {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+
+@media (max-width:600px) {
+    .news {
+        svg {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .news {
+        &__items {
+            grid-template-columns: 1fr;
+        }
+
+        &__img img {
+            height: auto;
+        }
+    }
+}

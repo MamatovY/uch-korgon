@@ -1,0 +1,60 @@
+.razdely__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+.razdely__item {
+  color: #000;
+  background: #fff;
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
+          box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
+}
+.razdely__img img {
+  height: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.razdely__title {
+  color: #112B60;
+}
+.razdely__content {
+  padding: 5px;
+}
+.razdely__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.razdely__date .fic {
+  gap: 0;
+  color: #112B60;
+}
+.razdely__text {
+  font-weight: 400;
+  font-size: calc(7px + 5 * (100vw - 425px) / 1075);
+}
+
+@media (max-width: 900px) {
+  .razdely__items {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 650px) {
+  .razdely__items {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 450px) {
+  .razdely__items {
+    grid-template-columns: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .razdely__item {
+    max-width: 280px;
+  }
+}/*# sourceMappingURL=razdely.css.map */

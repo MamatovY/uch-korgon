@@ -1,0 +1,54 @@
+@import './mixin.scss';
+
+.managementMore {
+    clear: left;
+    color: #333;
+    font-size: 20px;
+
+
+    h2 {
+        text-align: left;
+    }
+
+    &__field {
+        margin-bottom: 10px;
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    &__img {
+        width: 25%;
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 50px;
+
+        img {
+            height: auto;
+        }
+    }
+}
+
+
+@media (max-width:834px) {
+    .managementMore {
+        &__img {
+            width: 30%;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+@media (max-width:700px) {
+    .managementMore {
+        &__img {
+            width: 100%;
+            max-width: 280px;
+            float: none;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
+}

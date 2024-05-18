@@ -1,0 +1,85 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url('roboto_light.eot');
+	/* IE 9 Compatibility Mode */
+	src: url('roboto_light.eot?#iefix') format('embedded-opentype'),
+		/* IE < 9 */
+		url('roboto_light.woff2') format('woff2'),
+		/* Super Modern Browsers */
+		url('roboto_light.woff') format('woff'),
+		/* Firefox >= 3.6, any other modern browser */
+		url('roboto_light.ttf') format('truetype'),
+		/* Safari, Android, iOS */
+		url('roboto_light.svg#roboto_light') format('svg');
+	/* Chrome < 4, Legacy iOS */
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('roboto_regular.eot');
+	/* IE 9 Compatibility Mode */
+	src: url('roboto_regular.eot?#iefix') format('embedded-opentype'),
+		/* IE < 9 */
+		url('roboto_regular.woff2') format('woff2'),
+		/* Super Modern Browsers */
+		url('roboto_regular.woff') format('woff'),
+		/* Firefox >= 3.6, any other modern browser */
+		url('roboto_regular.ttf') format('truetype'),
+		/* Safari, Android, iOS */
+		url('roboto_regular.svg#roboto_regular') format('svg');
+	/* Chrome < 4, Legacy iOS */
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('roboto_medium.eot');
+	/* IE 9 Compatibility Mode */
+	src: url('roboto_medium.eot?#iefix') format('embedded-opentype'),
+		/* IE < 9 */
+		url('roboto_medium.woff2') format('woff2'),
+		/* Super Modern Browsers */
+		url('roboto_medium.woff') format('woff'),
+		/* Firefox >= 3.6, any other modern browser */
+		url('roboto_medium.ttf') format('truetype'),
+		/* Safari, Android, iOS */
+		url('roboto_medium.svg#roboto_medium') format('svg');
+	/* Chrome < 4, Legacy iOS */
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('robotoslab-semibold.eot');
+	/* IE 9 Compatibility Mode */
+	src: url('robotoslab-semibold.eot?#iefix') format('embedded-opentype'),
+		/* IE < 9 */
+		url('robotoslab-semibold.woff2') format('woff2'),
+		/* Super Modern Browsers */
+		url('robotoslab-semibold.woff') format('woff'),
+		/* Firefox >= 3.6, any other modern browser */
+		url('robotoslab-semibold.ttf') format('truetype'),
+		/* Safari, Android, iOS */
+		url('robotoslab-semibold.svg#robotoslab-semibold') format('svg');
+	/* Chrome < 4, Legacy iOS */
+	font-weight: 600;
+}
+
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('roboto_bold.eot');
+	/* IE 9 Compatibility Mode */
+	src: url('roboto_bold.eot?#iefix') format('embedded-opentype'),
+		/* IE < 9 */
+		url('roboto_bold.woff2') format('woff2'),
+		/* Super Modern Browsers */
+		url('roboto_bold.woff') format('woff'),
+		/* Firefox >= 3.6, any other modern browser */
+		url('roboto_bold.ttf') format('truetype'),
+		/* Safari, Android, iOS */
+		url('roboto_bold.svg#roboto_bold') format('svg');
+	/* Chrome < 4, Legacy iOS */
+	font-weight: 700;
+}

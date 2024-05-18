@@ -1,0 +1,36 @@
+.sitemap ul {
+  list-style-type: none;
+}
+.sitemap__main {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #112B60;
+}
+.sitemap__main a {
+  background: #112B60;
+  color: #fff;
+  border-radius: 4px;
+  padding: 10px;
+  display: inline-block;
+}
+.sitemap__main ul li ul {
+  margin-left: 10px;
+}
+.sitemap__main ul li {
+  margin-top: 10px;
+}
+.sitemap__main h5 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 834px) {
+  .sitemap__main {
+    grid-template-columns: auto;
+    row-gap: 50px;
+  }
+}/*# sourceMappingURL=sitemap.css.map */

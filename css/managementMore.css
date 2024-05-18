@@ -1,0 +1,39 @@
+.managementMore {
+  clear: left;
+  color: #333;
+  font-size: 20px;
+}
+.managementMore h2 {
+  text-align: left;
+}
+.managementMore__field {
+  margin-bottom: 10px;
+}
+.managementMore__field span {
+  font-weight: 700;
+}
+.managementMore__img {
+  width: 25%;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 50px;
+}
+.managementMore__img img {
+  height: auto;
+}
+
+@media (max-width: 834px) {
+  .managementMore__img {
+    width: 30%;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 700px) {
+  .managementMore__img {
+    width: 100%;
+    max-width: 280px;
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}/*# sourceMappingURL=managementMore.css.map */

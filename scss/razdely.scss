@@ -1,0 +1,77 @@
+@import 'mixin.scss';
+
+.razdely {
+
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    &__item {
+        color: #000;
+        background: #fff;
+        box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
+    }
+
+    &__img {
+        img {
+            height: 160px;
+            object-fit: cover;
+        }
+    }
+
+    &__title {
+        color: $color1;
+    }
+
+    &__content {
+        padding: 5px;
+    }
+
+    &__date {
+        display: flex;
+        justify-content: space-between;
+
+        .fic {
+            gap: 0;
+
+            color: $color1;
+
+        }
+    }
+
+    &__text {
+        font-weight: 400;
+        @include adaptive-value('font-size', 12, 7, 3);
+    }
+}
+
+@media(max-width:900px) {
+    .razdely {
+        &__items {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+
+@media(max-width:650px) {
+    .razdely {
+        &__items {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media(max-width:450px) {
+    .razdely {
+        &__items {
+            grid-template-columns: auto;
+            justify-content: center;
+        }
+
+        &__item {
+            max-width: 280px;
+        }
+    }
+}

@@ -1,0 +1,81 @@
+@import 'mixin.scss';
+
+.documentsMore {
+    text-align: center;
+
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        column-gap: 10px;
+        color: #000;
+
+        a {
+            color: #000;
+        }
+    }
+
+    &__fields {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__download {
+        border-radius: 4px;
+        border: 1px solid $color1;
+        padding: 10px;
+        color: $color1;
+    }
+
+    &__btn {
+        display: inline;
+        position: relative;
+        margin-right: 10px;
+
+
+        svg {
+            background-color: #E9EFFF;
+            padding: 5px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 2rem;
+            height: 2rem;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &__copy {
+        display: none;
+        background: #343434;
+        color: #FFF;
+        position: absolute;
+        top: -40px;
+        right: 0;
+        padding: 5px;
+        border-radius: 3px;
+        font-weight: 400;
+        z-index: 2;
+
+        &.active {
+            display: block;
+        }
+    }
+
+    &__iframe {
+        text-align: center;
+        margin-top: 20px;
+        width: 100%;
+        max-width: 1000px;
+        @include adaptive-value('height', 700, 400, 1);
+    }
+
+
+
+}

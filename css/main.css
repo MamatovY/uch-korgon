@@ -1,0 +1,103 @@
+.news h2 {
+  text-transform: uppercase;
+}
+.news__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 30px;
+}
+.news__center {
+  padding-left: 5px;
+  border-left: 1px solid #8E0000;
+  margin-bottom: 10px;
+}
+.news__more {
+  display: inline-block;
+  color: #000;
+}
+.news__more div {
+  margin-right: 20px;
+}
+.news__more svg {
+  width: 100%;
+}
+.news__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.news__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #000;
+}
+.news__item:first-child {
+  background-color: #132856;
+  color: #FFF;
+}
+.news__item:first-child .news__date path {
+  fill: #FFF;
+}
+.news__item:first-child .news__bottom-line path {
+  stroke: #FFF;
+}
+.news__item:first-child .news__triangle {
+  border-left-color: #132856;
+}
+.news__item:nth-child(2) {
+  background-color: #8E0000;
+  color: #FFF;
+}
+.news__item:nth-child(2) .news__date path {
+  fill: #FFF;
+}
+.news__item:nth-child(2) .news__bottom-line path {
+  stroke: #FFF;
+}
+.news__item:nth-child(3) .news__content, .news__item:nth-child(4) .news__content {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+.news__item:nth-child(3) .news__img, .news__item:nth-child(4) .news__img {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+.news__item:nth-child(3) .news__triangle, .news__item:nth-child(4) .news__triangle {
+  border-left-color: yellow;
+}
+.news__date {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.news__content {
+  padding: 50px;
+  text-align: center;
+}
+.news__img {
+  position: relative;
+}
+.news__img img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.news__triangle {
+  position: absolute;
+  left: 0;
+  top: calc(50% - 30px);
+  width: 0;
+  height: 0;
+  border-left: 30px solid #8E0000;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-top: 30px solid transparent;
+}/*# sourceMappingURL=main.css.map */

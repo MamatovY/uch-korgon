@@ -1,0 +1,50 @@
+@import './mixin.scss';
+
+.management {
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        @include adaptive-value('gap', 40, 20, 3);
+    }
+
+    &__item {
+        box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+        background: rgb(255, 255, 255);
+        text-align: center;
+        @include adaptive-value('width', 255, 200, 3);
+    }
+
+    &__img {
+        overflow: hidden;
+        @include adaptive-value('height', 280, 200, 3);
+
+        img {
+            height: 110%;
+            border-radius: 50%;
+            object-fit: cover;
+            position: relative;
+            top: -5%;
+        }
+    }
+
+    &__name {
+        margin: 10px 0;
+        padding: 0 5px;
+        color: #1978BE;
+        font-weight: 700;
+    }
+
+    &__position {
+        color: #333;
+    }
+}
+
+@media (max-width:492px) {
+    .management {
+        &__img img {
+            height: auto;
+        }
+    }
+}

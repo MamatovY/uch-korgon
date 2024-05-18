@@ -1,0 +1,122 @@
+@import './mixin.scss';
+
+
+.news {
+    h2 {
+        text-transform: uppercase;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 30px;
+    }
+
+    &__center {
+        padding-left: 5px;
+        border-left: 1px solid $color2;
+        margin-bottom: 10px;
+    }
+
+    &__more {
+        display: inline-block;
+        color: #000;
+
+        div {
+            margin-right: 20px;
+        }
+
+        svg {
+            width: 100%;
+        }
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &__item {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: #000;
+
+        &:first-child {
+            background-color: $color1;
+            color: #FFF;
+
+            .news__date path {
+                fill: #FFF;
+            }
+
+            .news__bottom-line path {
+                stroke: #FFF;
+            }
+
+            .news__triangle {
+                border-left-color: $color1;
+            }
+        }
+
+        &:nth-child(2) {
+            background-color: $color2;
+            color: #FFF;
+
+            .news__date path {
+                fill: #FFF;
+            }
+
+            .news__bottom-line path {
+                stroke: #FFF;
+            }
+        }
+
+        &:nth-child(3),
+        &:nth-child(4) {
+
+            .news__content {
+                order: 1;
+            }
+
+            .news__img {
+                order: -1;
+            }
+
+            .news__triangle {
+                border-left-color: yellow;
+            }
+        }
+    }
+
+    &__date {
+        justify-content: center;
+    }
+
+    &__content {
+        padding: 50px;
+        text-align: center;
+    }
+
+    &__img {
+        position: relative;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__triangle {
+        position: absolute;
+        left: 0;
+        top: calc((50%) - 30px);
+        width: 0;
+        height: 0;
+        border-left: 30px solid $color2;
+        border-right: 30px solid transparent;
+        border-bottom: 30px solid transparent;
+        border-top: 30px solid transparent;
+    }
+
+}

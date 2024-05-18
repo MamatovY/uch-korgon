@@ -1,0 +1,39 @@
+.infographic {
+  margin-top: 80px;
+}
+.infographic .fic {
+  margin-bottom: 20px;
+}
+.infographic h3 {
+  color: #112B60;
+}
+.infographic__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.infographic__item {
+  padding: 40px 10px;
+  border-radius: 4px;
+  border-top: 5px solid #112B60;
+  background: url("../assets/img/graphic-small.png");
+  background-repeat: no-repeat;
+  background-position: 110% 0%;
+}
+
+@media (max-width: 834px) {
+  .infographic__items {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .infographic svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+@media (max-width: 425px) {
+  .infographic__items {
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=infographic.css.map */

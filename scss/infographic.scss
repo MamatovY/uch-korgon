@@ -1,0 +1,59 @@
+@import './mixin.scss';
+
+
+
+
+
+.infographic {
+    margin-top: 80px;
+
+    .fic {
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        color: $color1;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    &__item {
+        padding: 40px 10px;
+        border-radius: 4px;
+        border-top: 5px solid $color1;
+        background: url("../assets/img/graphic-small.png");
+        background-repeat: no-repeat;
+        background-position: 110% 0%;
+    }
+}
+
+@media (max-width:834px) {
+    .infographic {
+        &__items {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+
+@media (max-width:600px) {
+    .infographic {
+        svg {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
+
+
+@media (max-width:425px) {
+    .infographic {
+        &__items {
+            grid-template-columns: 1fr;
+        }
+    }
+}

@@ -1,0 +1,181 @@
+@import './mixin.scss';
+
+.contacts {
+    &__grid {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 5px;
+        padding: 10px 0;
+        border-bottom: 1px solid #D9D9D9;
+
+
+        &.first {
+            background: #E9EFFF;
+            color: $color1;
+            font-weight: 500;
+        }
+    }
+
+    &__department {
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #D9D9D9;
+        font-weight: 500;
+        color: $color1;
+    }
+
+    &__map {
+        position: relative;
+        margin-top: 50px;
+        padding: 30px 0;
+
+    }
+
+    &__iframe {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__form {
+        position: relative;
+        z-index: 1;
+        width: 50%;
+        background: #FFF;
+        border-radius: 4px;
+        padding: 25px 15px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.18), 0px 0px 4px 0px rgba(0, 0, 0, 0.20);
+
+        &-title {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 5px;
+            margin-bottom: 20px;
+
+            .first {
+                font-weight: 500;
+                color: $color1
+            }
+        }
+    }
+
+    &__input {
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+        border: 1px solid #BBCEE8;
+    }
+
+    &__inputFields {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin: 10px 0;
+    }
+
+    &__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        margin: 20px 0;
+    }
+
+    &__file {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        button {
+            cursor: pointer;
+            padding: 10px 20px;
+            background-color: #868E96;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+        }
+
+        /* Скроем input[type="file"], так как он не должен быть видимым */
+        input[type="file"] {
+            display: none;
+        }
+    }
+
+    &__politicy {
+        a {
+            color: $color1;
+        }
+    }
+
+    &__btn {
+        width: 100%;
+        display: block;
+        text-align: center;
+        background: $color1;
+        color: #FFF;
+        padding: 15px 0;
+        border-radius: 4px;
+        margin-top: 20px;
+    }
+}
+
+
+
+@media (max-width:1024px) {
+    .contacts {
+        &__form {
+            &-title {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+
+@media (max-width:834px) {
+    .contacts {
+        &__map {}
+
+        &__iframe {
+            display: block;
+            margin-top: 50px;
+            position: static;
+            height: 462px;
+        }
+
+        &__form {
+            width: auto;
+            max-width: 640px;
+            margin: 0 auto;
+
+            &-title {
+                margin-bottom: 20px;
+
+                &.first {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .contacts {
+        &__inputFields {
+            grid-template-columns: 1fr;
+        }
+
+        &__form {
+            &-title {
+                display: grid;
+                grid-template-columns: auto auto;
+
+            }
+        }
+    }
+}

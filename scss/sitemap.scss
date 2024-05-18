@@ -1,0 +1,47 @@
+@import './mixin.scss';
+
+.sitemap {
+
+    ul {
+        list-style-type: none;
+    }
+
+    &__main {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+        justify-content: space-between;
+        color: $color1;
+
+        a {
+            background: $color1;
+            color: #fff;
+            border-radius: 4px;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        ul li ul {
+            margin-left: 10px;
+        }
+
+        ul li {
+            margin-top: 10px;
+        }
+
+        h5 {
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+@media (max-width:834px) {
+    .sitemap {
+        &__main {
+            grid-template-columns: auto;
+            row-gap: 50px;
+        }
+    }
+}
