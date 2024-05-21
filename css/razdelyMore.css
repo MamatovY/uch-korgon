@@ -32,7 +32,7 @@
 }
 .razdelyMore__paginationSlide .slick-current {
   opacity: 1;
-  border: 2px solid #282F39;
+  border: 2px solid #8E0000;
 }
 
 @media (max-width: 834px) {

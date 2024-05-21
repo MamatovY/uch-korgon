@@ -11,7 +11,7 @@
 }
 .contacts__grid.first {
   background: #E9EFFF;
-  color: #112B60;
+  color: #132856;
   font-weight: 500;
 }
 .contacts__department {
@@ -19,7 +19,7 @@
   padding: 10px 0;
   border-bottom: 1px solid #D9D9D9;
   font-weight: 500;
-  color: #112B60;
+  color: #132856;
 }
 .contacts__map {
   position: relative;
@@ -57,7 +57,7 @@
 }
 .contacts__form-title .first {
   font-weight: 500;
-  color: #112B60;
+  color: #132856;
 }
 .contacts__input {
   width: 100%;
@@ -108,13 +108,13 @@
   display: none;
 }
 .contacts__politicy a {
-  color: #112B60;
+  color: #132856;
 }
 .contacts__btn {
   width: 100%;
   display: block;
   text-align: center;
-  background: #112B60;
+  background: #132856;
   color: #FFF;
   padding: 15px 0;
   border-radius: 4px;

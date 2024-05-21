@@ -15,7 +15,7 @@
      object-fit: cover;
 }
 .razdely__title {
-  color: #112B60;
+  color: #132856;
 }
 .razdely__content {
   padding: 5px;
@@ -30,7 +30,7 @@
 }
 .razdely__date .fic {
   gap: 0;
-  color: #112B60;
+  color: #132856;
 }
 .razdely__text {
   font-weight: 400;

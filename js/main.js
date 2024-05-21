@@ -4,8 +4,16 @@ $('.burger').click(function () {
 });
 
 $('.banner').slick({
+    arrows: false,
     dots: true,
 });
+
+$('.actually__slider').slick({
+    arrows: false,
+    dots: true,
+});
+
+
 
 
 $('.urls__items').slick({

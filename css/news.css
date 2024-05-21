@@ -20,11 +20,11 @@
   gap: 10px;
 }
 .news__main h3 a {
-  color: #112B60;
+  color: #132856;
 }
 .news__tags {
   margin: 10px 0;
-  color: #282F39;
+  color: #8E0000;
 }
 
 @media (max-width: 1024px) {

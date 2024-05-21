@@ -138,7 +138,7 @@ area {
   font-weight: 700;
 }
 .breadcrumb .active {
-  color: #112B60;
+  color: #132856;
 }
 
 @media (max-width: 500px) {
@@ -158,12 +158,12 @@ area {
   display: inline-block;
 }
 .pagination a {
-  color: #112B60;
-  border: 1px solid #112B60;
+  color: #132856;
+  border: 1px solid #132856;
 }
 .pagination a:hover {
   color: #fff;
-  background: #112B60;
+  background: #132856;
 }
 .pagination span {
   border: 1px solid #898989;
@@ -370,7 +370,7 @@ area {
   min-width: 100%;
   text-align: center;
   z-index: 11;
-  background: #112B60;
+  background: #132856;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: all 0.5s ease;
