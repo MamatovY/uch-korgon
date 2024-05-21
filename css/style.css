@@ -267,6 +267,9 @@ area {
   font-size: 12px;
   border-radius: 10px;
 }
+.header__submit {
+  color: #FFF;
+}
 .header__logo {
   display: -webkit-box;
   display: -ms-flexbox;

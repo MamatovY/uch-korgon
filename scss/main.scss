@@ -1,6 +1,19 @@
 @import './mixin.scss';
 
 
+.more {
+    display: flex;
+    justify-content: flex-end;
+
+    a {
+        color: #333;
+    }
+
+    svg {
+        width: 100%;
+    }
+}
+
 .news {
     h2 {
         text-transform: uppercase;
@@ -46,9 +59,6 @@
             background-color: $color1;
             color: #FFF;
 
-            .news__date path {
-                fill: #FFF;
-            }
 
             .news__bottom-line path {
                 stroke: #FFF;
@@ -63,9 +73,6 @@
             background-color: $color2;
             color: #FFF;
 
-            .news__date path {
-                fill: #FFF;
-            }
 
             .news__bottom-line path {
                 stroke: #FFF;
@@ -144,20 +151,19 @@
         color: #FFF;
     }
 
-    &__more {
-        display: flex;
-        justify-content: flex-end;
 
-        svg {
-            width: 100%;
-        }
+    .more a {
+        color: #FFF;
     }
-
 
 
     &__slider {
         position: relative;
         bottom: -50px;
+    }
+
+    &__slide {
+        margin: 0 10px;
     }
 
     &__main {
@@ -180,6 +186,10 @@
         display: flex;
     }
 
+    &__img img {
+        border-radius: 15px;
+    }
+
     &__slide_more {
         color: #000;
         justify-content: start;
@@ -194,4 +204,69 @@
         }
     }
 
+    .slick-dots {
+        bottom: auto;
+        top: 10px;
+        right: 20px;
+        width: auto;
+
+        li.slick-active button:before {
+            opacity: 1;
+            color: transparent;
+        }
+
+
+        li {
+            border: 1px solid $color2;
+            border-radius: 50%;
+        }
+
+        li.slick-active {
+            width: 40px;
+            background: $color2;
+            border-radius: 10px;
+        }
+
+        li button:before {
+            color: transparent;
+            opacity: 1;
+        }
+    }
+}
+
+.projects {
+    margin-top: 100px;
+    padding-top: 50px;
+    border-top: 0.5px solid rgb(37, 37, 37);
+
+    &__title {
+        border-left: 1px solid $color2;
+        padding-left: 10px;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        border-top: 1px solid #A7A8AB;
+        border-bottom: 1px solid #A7A8AB;
+        padding: 10px 0;
+        margin-top: 30px;
+    }
+
+    &__left {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__right {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__name {
+        color: #333333;
+    }
 }
