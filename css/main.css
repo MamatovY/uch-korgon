@@ -211,7 +211,7 @@
 .projects {
   margin-top: 100px;
   padding-top: 50px;
-  border-top: 0.5px solid rgb(37, 37, 37);
+  border-top: 0.5px solid #A7A8AB;
 }
 .projects__title {
   border-left: 1px solid #8E0000;
@@ -250,4 +250,43 @@
 }
 .projects__name {
   color: #333333;
+}
+
+.documents {
+  margin-top: 100px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #A7A8AB;
+}
+.documents__title {
+  border-left: 1px solid #8E0000;
+  padding-left: 10px;
+}
+.documents__item {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+  background: #D9D9DE;
+  margin-bottom: 20px;
+}
+.documents__item > div {
+  border: 1px solid rgb(118, 118, 122);
+  padding: 10px 25px;
+}
+.documents__item-title {
+  font-weight: 600;
+  color: #132856;
+  margin-bottom: 5px;
+}
+.documents__name a {
+  color: #000;
+}
+.documents__name a:hover {
+  text-decoration: underline;
+}
+
+.vacancy {
+  margin-top: 50px;
+}
+.vacancy__title {
+  border-left: 1px solid #8E0000;
+  padding-left: 10px;
 }/*# sourceMappingURL=main.css.map */

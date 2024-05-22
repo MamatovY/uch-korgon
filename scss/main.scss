@@ -237,7 +237,7 @@
 .projects {
     margin-top: 100px;
     padding-top: 50px;
-    border-top: 0.5px solid rgb(37, 37, 37);
+    border-top: 0.5px solid #A7A8AB;
 
     &__title {
         border-left: 1px solid $color2;
@@ -268,5 +268,54 @@
 
     &__name {
         color: #333333;
+    }
+}
+
+
+.documents {
+    margin-top: 100px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #A7A8AB;
+
+    &__title {
+        border-left: 1px solid $color2;
+        padding-left: 10px;
+    }
+
+    &__item {
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr 1fr;
+        background: #D9D9DE;
+        margin-bottom: 20px;
+
+        >div {
+            border: 1px solid rgb(118, 118, 122);
+            padding: 10px 25px;
+        }
+
+        &-title {
+            font-weight: 600;
+            color: #132856;
+            margin-bottom: 5px;
+        }
+    }
+
+    &__name {
+        a {
+            color: #000;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.vacancy {
+    margin-top: 50px;
+
+    &__title {
+        border-left: 1px solid $color2;
+        padding-left: 10px;
     }
 }
