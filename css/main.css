@@ -289,4 +289,60 @@
 .vacancy__title {
   border-left: 1px solid #8E0000;
   padding-left: 10px;
+}
+.vacancy__items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+}
+.vacancy__item {
+  background: #E5E5EB;
+  color: #333333;
+  padding: 25px;
+}
+.vacancy__text {
+  font-weight: 600;
+}
+.vacancy__line {
+  border-top: 1px solid #76767A;
+  margin: 10px 0;
+}
+
+.urls {
+  margin-top: 50px;
+  padding-top: 30px;
+  border-top: 1px solid #A7A8AB;
+}
+.urls__title {
+  text-align: center;
+  margin: 50px 0;
+}
+.urls__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+.urls__item {
+  background: #F5F5F7;
+  text-align: center;
+  font-weight: 600;
+  width: 380px;
+  color: #000;
+  padding: 15px;
+  border-radius: 6px;
+}
+.urls__img {
+  width: 100px;
+  height: 50px;
+  margin: 0 auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=main.css.map */

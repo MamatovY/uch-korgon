@@ -16,27 +16,6 @@ $('.actually__slider').slick({
 
 
 
-$('.urls__items').slick({
-    arrows: false,
-    dots: true,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    responsive: [
-        {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3
-            }
-        },
-        {
-            breakpoint: 525,
-            settings: {
-                slidesToShow: 1
-            }
-        }
-    ]
-});
-
 
 $('.newsMore__mainSlide').slick({
     slidesToShow: 1,

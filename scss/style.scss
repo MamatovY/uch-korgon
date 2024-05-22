@@ -13,7 +13,6 @@ body {
     font-style: normal;
     color: #000;
     font-size: 16px;
-    padding-bottom: 100px;
 
     @media (max-width:1024px) {
         font-size: 14px;
@@ -499,5 +498,92 @@ area {
             box-shadow: none;
         }
 
+    }
+}
+
+
+.footer {}
+
+.footer {
+    margin-top: 120px;
+    background: rgb(51, 51, 51);
+    padding: 30px 0;
+    color: #FFF;
+    clear: left;
+
+    &__logo {
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #FFF;
+
+        img {
+            width: 46px;
+            height: 46px;
+        }
+
+        span {
+            max-width: 70%;
+        }
+    }
+
+    &__content {
+        margin-top: 25px;
+        border-top: 1px solid #FFF;
+        padding-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    &__item {
+        margin-bottom: 10px;
+        display: block;
+
+        svg {
+            width: 17px;
+            height: 17px;
+        }
+    }
+
+    a.footer__item {
+        display: flex;
+    }
+
+    &__title {
+        font-weight: 700;
+    }
+
+    &__metric {
+
+        img {
+            width: auto;
+            height: auto;
+        }
+    }
+
+    &__copyright {
+        font-size: 14px;
+        margin-top: 40px;
+        text-align: center;
+        color: rgba($color: #FFF, $alpha: 0.52);
+        font-weight: 500;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        padding-top: 20px;
+    }
+
+
+    @media (max-width:1024px) {
+        &__copyright {
+            font-size: 12px;
+        }
+    }
+
+    @media (max-width:768px) {
+        &__copyright {
+            font-size: 10px;
+        }
     }
 }
