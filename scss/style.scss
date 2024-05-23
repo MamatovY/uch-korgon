@@ -258,6 +258,8 @@ area {
         padding-top: 10px;
         padding-bottom: 10px;
         display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
         align-items: center;
         justify-content: space-between;
         border-bottom: 1px solid #FFF;
@@ -266,6 +268,7 @@ area {
     &__right {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         gap: 20px;
     }
 
@@ -298,6 +301,7 @@ area {
 
     &__bottom {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         padding-top: 10px;
     }
@@ -305,20 +309,35 @@ area {
     #lang {
         border: none;
     }
+
+
 }
 
 .nav {
-    display: flex;
-    gap: 30px;
 
     &__line {
         border-left: 1px solid #FFF;
     }
+
+    &__ul {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+    }
+
+    @media (max-width:1280px) {
+        &__ul {
+            gap: 10px;
+        }
+    }
 }
 
 .nav2 {
-    display: flex;
-    gap: 20px;
+    &__ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
 }
 
 
@@ -506,9 +525,6 @@ area {
 
     }
 }
-
-
-.footer {}
 
 .footer {
     margin-top: 120px;

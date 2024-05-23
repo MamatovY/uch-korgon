@@ -246,6 +246,9 @@ area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -261,6 +264,9 @@ area {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 20px;
 }
 .header__input {
@@ -294,6 +300,8 @@ area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -303,17 +311,24 @@ area {
   border: none;
 }
 
-.nav {
+.nav__line {
+  border-left: 1px solid #FFF;
+}
+.nav__ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
+  list-style: none;
 }
-.nav__line {
-  border-left: 1px solid #FFF;
+@media (max-width: 1280px) {
+  .nav__ul {
+    gap: 10px;
+  }
 }
 
-.nav2 {
+.nav2__ul {
+  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

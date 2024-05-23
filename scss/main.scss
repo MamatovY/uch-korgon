@@ -1,5 +1,8 @@
 @import './mixin.scss';
 
+main {
+    display: none;
+}
 
 .more {
     display: flex;
