@@ -302,6 +302,7 @@ area {
     &__bottom {
         display: flex;
         flex-wrap: wrap;
+        row-gap: 10px;
         align-items: center;
         padding-top: 10px;
     }
@@ -310,6 +311,9 @@ area {
         border: none;
     }
 
+    @media (max-width:768px) {
+        background: #333333;
+    }
 
 }
 

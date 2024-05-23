@@ -302,6 +302,7 @@ area {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  row-gap: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -309,6 +310,11 @@ area {
 }
 .header #lang {
   border: none;
+}
+@media (max-width: 768px) {
+  .header {
+    background: #333333;
+  }
 }
 
 .nav__line {
