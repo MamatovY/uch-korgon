@@ -13,6 +13,11 @@ $('.actually__slider').slick({
     dots: true,
 });
 
+document.getElementById('lang').addEventListener('change', function () {
+    var selectedValue = this.value;
+    window.location.href = selectedValue;
+});
+
 
 
 
