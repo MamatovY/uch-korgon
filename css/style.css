@@ -299,6 +299,9 @@ area {
           align-items: center;
   padding-top: 10px;
 }
+.header #lang {
+  border: none;
+}
 
 .nav {
   display: -webkit-box;
