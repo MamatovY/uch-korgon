@@ -374,7 +374,8 @@ area {
     visibility: hidden;
     opacity: 0;
     min-height: 100vh;
-    overflow: scroll;
+    height: 100%;
+    overflow: auto;
     background: #333333;
     -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
@@ -421,6 +422,22 @@ area {
   }
   .header .cross {
     display: inline;
+  }
+}
+@media (max-width: 425px) {
+  .header__right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .header form .cross {
+    position: absolute;
+    top: 15px;
+    right: 1rem;
   }
 }
 
@@ -492,6 +509,7 @@ area {
     width: 100%;
   }
 }
+
 .nav__line {
   border-left: 1px solid #FFF;
 }
@@ -502,6 +520,11 @@ area {
   gap: 30px;
   list-style: none;
 }
+@media (max-width: 1280px) {
+  .nav__ul {
+    gap: 10px;
+  }
+}
 @media (max-width: 768px) {
   .nav {
     position: fixed;
@@ -510,6 +533,7 @@ area {
     background: #3D3D3D;
     min-height: 100vh;
     padding: 100px 20px 20px 20px;
+    z-index: 20;
   }
   .nav__ul {
     -webkit-box-orient: vertical;
@@ -517,6 +541,13 @@ area {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 10px;
+  }
+}
+@media (max-width: 425px) {
+  .nav {
+    padding-top: 150px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
 
@@ -529,10 +560,8 @@ area {
 }
 @media (max-width: 768px) {
   .nav2__ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    padding-left: 120px;
+    display: grid;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -547,6 +576,11 @@ area {
   }
   .nav2 .dropdown ul {
     background: none;
+  }
+}
+@media (max-width: 425px) {
+  .nav2__ul {
+    padding-left: 80px;
   }
 }
 
@@ -667,6 +701,9 @@ area {
     position: static;
     min-width: auto;
     display: none;
+  }
+  .dropdown ul li {
+    display: block;
   }
   .dropdown ul li:hover {
     background: none;

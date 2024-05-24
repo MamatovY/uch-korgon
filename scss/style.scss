@@ -367,8 +367,6 @@ area {
         padding-top: 10px;
     }
 
-
-
     .cross {
         display: none;
     }
@@ -379,7 +377,8 @@ area {
         visibility: hidden;
         opacity: 0;
         min-height: 100vh;
-        overflow: scroll;
+        height: 100%;
+        overflow: auto;
         background: #333333;
         transition: all 0.7s ease;
         z-index: 50;
@@ -427,6 +426,19 @@ area {
 
         .cross {
             display: inline;
+        }
+    }
+
+    @media (max-width:425px) {
+        &__right {
+            flex-direction: column;
+            align-items: start;
+        }
+
+        form .cross {
+            position: absolute;
+            top: 15px;
+            right: 1rem;
         }
     }
 }
@@ -488,7 +500,7 @@ area {
         }
     }
 
-    @media (max-width:500px) {}
+
 }
 
 .nav {
@@ -502,6 +514,13 @@ area {
         list-style: none;
     }
 
+    @media (max-width:1280px) {
+        &__ul {
+            gap: 10px;
+        }
+    }
+
+
     @media (max-width:768px) {
         position: fixed;
         left: 0;
@@ -509,11 +528,18 @@ area {
         background: #3D3D3D;
         min-height: 100vh;
         padding: 100px 20px 20px 20px;
+        z-index: 20;
 
         &__ul {
             flex-direction: column;
             gap: 10px;
         }
+    }
+
+    @media(max-width:425px) {
+        padding-top: 150px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 }
 
@@ -526,7 +552,8 @@ area {
 
     @media (max-width:768px) {
         &__ul {
-            flex-direction: column;
+            padding-left: 120px;
+            display: grid;
             justify-content: center;
             text-align: center;
             padding-top: 30px;
@@ -542,6 +569,12 @@ area {
             ul {
                 background: none;
             }
+        }
+    }
+
+    @media (max-width:425px) {
+        &__ul {
+            padding-left: 80px;
         }
     }
 }
@@ -690,6 +723,10 @@ area {
             position: static;
             min-width: auto;
             display: none;
+
+            li {
+                display: block;
+            }
 
             li:hover {
                 background: none;
