@@ -54,6 +54,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   color: #000;
+  background: #FFF;
 }
 .news__item:first-child {
   background-color: #132856;

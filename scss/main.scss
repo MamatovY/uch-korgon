@@ -55,6 +55,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         color: #000;
+        background: #FFF;
 
         &:first-child {
             background-color: $color1;
@@ -120,6 +121,7 @@
         align-items: center;
         padding: 20px 50px;
         text-align: center;
+
     }
 
     &__img {

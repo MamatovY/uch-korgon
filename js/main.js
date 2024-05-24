@@ -228,7 +228,7 @@ document.addEventListener('click', event => {
 
 
 function handleWindowSize() {
-    if (window.innerWidth >= 768) {
+    if (window.innerWidth > 768) {
         addMouse();
         removeClick()
     } else {
