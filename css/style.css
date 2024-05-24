@@ -90,6 +90,11 @@ h2 {
 h4 {
   font-size: 18px;
 }
+@media (max-width: 900px) {
+  h4 {
+    font-size: 16px;
+  }
+}
 @media (max-width: 768px) {
   h4 {
     font-size: 14px;
@@ -215,6 +220,10 @@ area {
   background-size: cover !important;
   background-position: center !important;
 }
+.banner__main {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
 .banner__description {
   margin: 10px 0;
 }
@@ -224,13 +233,47 @@ area {
   border-radius: 4px;
   padding: 10px 25px;
 }
-.banner .slick-dots li button:before {
-  opacity: 0.5;
-  color: #FFF;
+.banner .slick-dots {
+  bottom: 20px;
 }
-.banner .slick-dots li.slick-active button:before {
-  opacity: 1;
-  color: #FFF;
+.banner .slick-dots li {
+  border: 1px solid #FFF;
+  border-radius: 50%;
+}
+.banner .slick-dots li.slick-active {
+  width: 50px;
+  background: #FFF;
+  border-radius: 20px;
+}
+.banner .slick-dots li button:before {
+  content: none;
+}
+@media (max-width: 900px) {
+  .banner .slick-dots li {
+    width: 10px;
+    height: 10px;
+  }
+  .banner .slick-dots li.slick-active {
+    width: 30px;
+  }
+  .banner__slide {
+    min-height: 500px !important;
+  }
+}
+@media (max-width: 768px) {
+  .banner__slide {
+    min-height: 400px !important;
+  }
+}
+@media (max-width: 600px) {
+  .banner__slide {
+    min-height: 350px !important;
+  }
+}
+@media (max-width: 425px) {
+  .banner__slide {
+    min-height: 300px !important;
+  }
 }
 
 .header {
@@ -382,7 +425,15 @@ area {
 }
 
 #lang {
+  cursor: pointer;
   border: none;
+  color: #FFF;
+  background: transparent;
+}
+#lang option {
+  color: #000;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0);
 }
 
 .mobile-header {

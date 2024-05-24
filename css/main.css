@@ -20,6 +20,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -98,6 +101,19 @@
   margin: 10px 0 30px 0;
 }
 .news__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 20px 50px;
   text-align: center;
 }
@@ -120,8 +136,94 @@
   border-bottom: 30px solid transparent;
   border-top: 30px solid transparent;
 }
+@media (max-width: 1280px) {
+  .news__content {
+    padding: 10px;
+  }
+  .news__date {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 1024px) {
+  .news {
+    font-size: 12px;
+  }
+  .news h4 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 900px) {
+  .news h4 {
+    font-size: 14px;
+  }
+  .news__date {
+    margin: 0;
+  }
+  .news__description {
+    margin-top: 0;
+  }
+}
+@media (max-width: 768px) {
+  .news {
+    font-size: 16px;
+  }
+  .news h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .news__items {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .news__item:first-child {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .news__item:nth-child(3) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .news__item:nth-child(2) {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .news__item:nth-child(4) {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .news__content {
+    padding: 20px;
+  }
+}
+@media (max-width: 550px) {
+  .news {
+    font-size: 12px;
+  }
+  .news h4 {
+    font-size: 16px;
+  }
+  .news__content {
+    padding: 10px;
+  }
+}
+@media (max-width: 425px) {
+  .news {
+    font-size: 10px;
+  }
+  .news h4 {
+    font-size: 12px;
+  }
+  .news__content {
+    padding: 10px;
+  }
+}
 
 .actually {
+  display: none;
   background: rgb(51, 51, 51);
   padding-top: 100px;
 }
@@ -209,6 +311,7 @@
 }
 
 .projects {
+  display: none;
   margin-top: 100px;
   padding-top: 50px;
   border-top: 0.5px solid #A7A8AB;
@@ -253,6 +356,7 @@
 }
 
 .documents {
+  display: none;
   margin-top: 100px;
   padding-bottom: 30px;
   border-bottom: 1px solid #A7A8AB;
@@ -284,6 +388,7 @@
 }
 
 .vacancy {
+  display: none;
   margin-top: 50px;
 }
 .vacancy__title {
@@ -310,6 +415,7 @@
 }
 
 .urls {
+  display: none;
   margin-top: 50px;
   padding-top: 30px;
   border-top: 1px solid #A7A8AB;
