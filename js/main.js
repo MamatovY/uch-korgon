@@ -1,6 +1,8 @@
 $('.burger').click(function () {
-    $('.nav').toggleClass('show');
-    $('.burger').toggleClass('show');
+    $('.header').addClass('show');
+});
+$('.cross').click(function () {
+    $('.header').removeClass('show');
 });
 
 $('.banner').slick({
