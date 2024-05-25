@@ -192,6 +192,13 @@
     display: grid;
     grid-template-columns: 1fr;
   }
+  .news__item:hover .news__triangle {
+    top: calc(50% - 30px);
+    border-left: 30px solid #8E0000;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-top: 30px solid transparent;
+  }
   .news__item:first-child {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;

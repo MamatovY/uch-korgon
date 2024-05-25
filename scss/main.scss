@@ -206,6 +206,16 @@
         }
 
         &__item {
+            &:hover {
+                .news__triangle {
+                    top: calc((50%) - 30px);
+                    border-left: 30px solid $color2;
+                    border-right: 30px solid transparent;
+                    border-bottom: 30px solid transparent;
+                    border-top: 30px solid transparent;
+                }
+            }
+
             &:first-child {
                 order: -1;
             }
