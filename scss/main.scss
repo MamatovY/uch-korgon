@@ -1,6 +1,12 @@
 @import './mixin.scss';
 
+.header {
+    position: absolute;
+    background: none;
+}
+
 .more {
+
     display: flex;
     justify-content: flex-end;
 

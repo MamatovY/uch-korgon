@@ -23,7 +23,6 @@
 }
 .management__img img {
   height: 110%;
-  border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
