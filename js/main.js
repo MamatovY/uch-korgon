@@ -15,10 +15,13 @@ $('.actually__slider').slick({
     dots: true,
 });
 
-document.getElementById('lang').addEventListener('change', function () {
-    var selectedValue = this.value;
-    window.location.href = selectedValue;
+document.querySelectorAll('#lang').forEach(function (langElement) {
+    langElement.addEventListener('change', function () {
+        var selectedValue = this.value;
+        window.location.href = selectedValue;
+    });
 });
+
 
 
 
